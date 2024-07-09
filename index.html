@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Student Registration System</title>
+</head>
+
+<body>
+  <header>
+    <!-- Main heading for the system -->
+    <h1 id="heading">Student Registration System</h1>
+  </header>
+  <div id="container">
+    <!-- Form including input fields -->
+    <form id="myForm" autocomplete="off">
+      <input type="number" max="999" id="userid" placeholder="Student Id"  required><br>
+      <input type="text"  id="urName" placeholder="Name" required><br>
+      <input type="number" maxlength=10 id="phoneNum" placeholder="Phone Number" required><br>
+      <input type="email" id="userEmail" placeholder="Email" required><br>
+      <div class="button-group">
+        <!-- button for submit and cancel  -->
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+      </div>
+    </form>
+  </div>
+ <!-- Table to display the recorded data -->
+  <table id="Record">
+    <thead>
+      <tr>
+        <th>Student Id</th>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="record-body">
+    </tbody>
+  </table>
+
+<!-- link for external JS file -->
+  <script src="./index.js"></script>
+
+</body>
+</html>

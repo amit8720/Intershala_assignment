@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* main body css  */
+body {
+    font-family: Arial, sans-serif;
+    background: hsla(277, 79%, 84%, 1);
+    background: linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDB4F6", endColorstr="#8DD0FC", GradientType=1 );
+}
+
+/* main heading  */
+#heading {
+    background: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#container{
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border: 2px solid black;
+    box-shadow: rgba(35, 34, 34, 0.3) 0px 19px 38px, rgba(45, 43, 43, 0.22) 0px 15px 12px; 
+}
+/* Main Form */
+#myForm{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Input field */
+input{
+    width: 400px;
+    height: 40px;
+    margin: 6px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+input:hover {
+    background-color:rgb(232, 247, 255);
+    box-shadow: 0 0 10px #6E78FF;
+  } */
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#submitBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#submitBtn:hover {
+    background-color: #45a049;
+}
+
+button#cancelBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+button#cancelBtn:hover {
+    background-color: #e53935;
+}
+
+#Record {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#Record th,
+#Record td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#Record th {
+    background-color: #f2f2f2;
+}
+
+#Record tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#Record tbody tr:hover {
+    background-color: #ddd;
+}
+
+#Record .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Record .action-buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px; 
+}
+
+#Record .action-buttons button.edit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+#Record .action-buttons button.delete {
+    background-color: #f44336;
+    color: white;
+    margin-left: 15px; 
+    border: none;
+}
+
+.edit-button{
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button{
+    background-color: red;
+    color: white;
+}
+
+.left-margin{
+    margin-left: 5px;
+}
